@@ -1472,7 +1472,8 @@ or referencing TLS options in the [`IngressRoute`](#kind-ingressroute) / [`Ingre
         - CurveP384
       cipherSuites:                                 # [4]
         - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-        - TLS_RSA_WITH_AES_256_GCM_SHA384
+        - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+        - TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
       clientAuth:                                   # [5]
         secretNames:                                # [6]
           - secretCA1
@@ -1506,7 +1507,8 @@ or referencing TLS options in the [`IngressRoute`](#kind-ingressroute) / [`Ingre
       sniStrict: true
       cipherSuites:
         - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-        - TLS_RSA_WITH_AES_256_GCM_SHA384
+        - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+        - TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
       clientAuth:
         secretNames:
           - secretCA1
